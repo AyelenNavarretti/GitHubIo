@@ -1,0 +1,173 @@
+#principal {
+    /*Especificaciones generales del background of the content*/
+    /*background-color: lightgreen;
+    Se tapa la imagen*/
+    width: 900px;
+    height: auto;
+    /*Para que quede centrado*/
+    margin: auto;
+    border: 3px solid black;
+    background-color: white;
+}
+
+body {
+    background-color: lightblue;
+}
+
+header {
+    /*Límites logo NYSL y Menú(Home, About Us, Contact)*/
+    width: 900px;
+    height: 530px;
+    border: 0px solid #000;
+}
+
+#logo {
+    /*"Northside Youth Soccer League". Agregarle el logo*/
+    /*<Header; <div id="principal............*/
+    width: 900px;
+    height: 65px;
+    border: 0px solid #000;
+    text-align: center;
+    float: left;
+    font-family: "Slabo", serif;
+}
+
+.titulo {
+    /*Modelo de caja. marca los límites del logo*/
+    padding: 5px;
+    margin-top: 27px;
+    font-size: 50px;
+}
+
+.menu {
+    /*Especificaciones Menú: Home, About Us, Contact*/
+    font-family: "Slabo", serif;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #ccc;
+    float: right;
+    margin-top: 30px;
+    background: #006699;
+}
+
+/*Desde línea 11 hasta línea 39 corregir solamente el color*/
+.menu ul {}
+
+/*Si clickeas no te redirecciona al contenido*/
+
+.menu ul li {
+    /*Especificaciones generales*/
+    list-style: none;
+    float: left;
+    padding-bottom: 6.5px;
+    /*Si elijo la opción right el menú empieza de derecha a izquierda, al revés*/
+}
+
+.menu ul li a {
+    text-decoration: none;
+    /*se le quita el subrayado*/
+    padding: 9px;
+    /*Menú list: Alto y ancho*/
+    /*queda separado*/
+    border: 0px solid #ccc;
+    color: #fff;
+}
+
+/*Si yo quiero ponerle un botón de leer más tengo que poner esto
+.menu ul li a:hover {
+    background: #fff;
+    color: #006699;
+    transition: background 1s, color 1s;
+}img src="img/Design3.jpg" width="700" height="235">*/
+
+#categorias {
+    /*se llama al contenedor de categorias*/
+    width: 900px;
+    height: auto;
+    overflow: hidden;
+    border: 0px solid;
+    margin-top: 15px;
+    padding: 1px 25px 1px 75px;
+    /*lo separamos un poco de arriba de la img*/
+}
+
+.slide {
+    margin-top: 35px;
+    width: 800px;
+    height: 488px;
+    padding: 1px 50px 1px 50px;
+}
+
+.Icono {
+    width: 100px;
+    height: 100px;
+    padding: 1px 1px 1px 75px;
+    float: left;
+}
+
+.uno {
+    font-family: "Slabo", serif;
+    width: 700px;
+    height: 250px;
+    overflow: hidden;
+    border: none;
+    /*float: auto;
+    Se alinean de forma horizontal*/
+    padding: 1px;
+    /*Para que el texto no pise, para que se separe del borde*/
+    text-align: right;
+    /*Sirve para centrar el texto*/
+    color: #4682b4;
+}
+
+.dos {
+    font-family: "Slabo", serif;
+    width: 700px;
+    height: auto;
+    overflow: hidden;
+    border: none;
+    /*float: auto;
+    Se alinean de forma horizontal*/
+    padding: 5px;
+    /*Para que el texto no pise, para que se separe del borde*/
+    text-align: right;
+    /*Sirve para centrar el texto*/
+    color: #4682b4;
+}
+
+.tres {
+    font-family: "Slabo", serif;
+    width: 700px;
+    height: auto;
+    overflow: hidden;
+    border: none;
+    /*border: 1px solid #ccc;*/
+    /*float: auto;
+    se alinean de forma horizontal*/
+    padding: 5px;
+    /*Para que el texto no pise, para que se separe del borde*/
+    text-align: right;
+    /*Sirve para centrar el texto*/
+    color: #4682b4;
+}
+
+.parrafo {
+    font-family: "Heebo", sans-serif;
+    color: #707070;
+    text-align: right;
+}
+
+footer {
+    position: static;
+    padding: 1px;
+    bottom: 0;
+    margin-top: 90px;
+    width: 90%;
+    height: 100px;
+    text-align: center;
+    background-color: white;
+}
+
+#footer p {
+    width: 100%;
+}

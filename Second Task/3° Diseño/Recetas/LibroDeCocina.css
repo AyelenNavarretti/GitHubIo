@@ -1,0 +1,140 @@
+#principal {
+    /*Especificaciones generales del background of the content*/
+    background-image: linear-gradient(#EDA0CE, #DFC8CE);
+    width: 800px;
+    height: auto;
+    /*Para que quede centrado*/
+    margin: auto;
+    border: 3px solid black;
+}
+
+body {
+    background-image: image("Fondo.jgp");
+}
+
+header {
+    width: 800px;
+    height: 545px;
+    border: 0px solid #000;
+}
+
+#titulo {
+    width: 500px;
+    height: 20px;
+    border: 0px solid #000;
+    text-align: center;
+    float: left;
+   font-family: "Bad Script", cursive;
+}
+
+.titulo {
+    /*Modelo de caja. marca los límites del logo*/
+    width: 400px;
+    height: auto;
+    padding: 5px;
+    margin: 12px;
+    font-family: "Bad Script", cursive;
+    font-size: 40px;
+}
+
+.menu {
+    /*Especificaciones Menú: Home, About Us, Contact*/
+    font-family: "Bad Script", cursive;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #ccc;
+    float: right;
+    margin: 1px;
+    background: #006699;
+}
+
+/*Desde línea 11 hasta línea 39 corregir solamente el color*/
+.menu ul {}
+
+/*Si clickeas no te redirecciona al contenido*/
+
+.menu ul li {
+    /*Especificaciones generales*/
+    list-style: none;
+    float: left;
+    padding-bottom: 6.5px;
+    /*Si elijo la opción right el menú empieza de derecha a izquierda, al revés*/
+}
+
+.menu ul li a {
+    text-decoration: none;
+    /*se le quita el subrayado*/
+    padding: 9px;
+    /*Menú list: Alto y ancho*/
+    /*queda separado*/
+    border: 0px solid #ccc;
+    color: #fff;
+}
+
+/*Si yo quiero ponerle un botón de leer más tengo que poner esto
+.menu ul li a:hover {
+    background: #fff;
+    color: #006699;
+    transition: background 1s, color 1s;
+}img src="img/Design3.jpg" width="700" height="235">*/
+
+#receta {
+    /*se llama al contenedor de categorias*/
+    width: 750px;
+    height: auto;
+    overflow: hidden;
+    border: 0px solid;
+    padding: 15px;
+    /*lo separamos un poco de arriba de la img*/
+}
+
+.ingredientes {
+    font-family: "Bad Script", cursive;
+    width: 250px;
+    height: auto;
+    overflow: hidden;
+    border: none;
+    /*float: auto;
+    Se alinean de forma horizontal*/
+    padding: 1px;
+    /*Para que el texto no pise, para que se separe del borde*/
+    text-align: left;
+    /*Sirve para centrar el texto*/
+    color: #4682b4;
+}
+
+.Paso a Paso {
+    font-family: "Bad Script", cursive;
+    width: 450px;
+    height: auto;
+    overflow: hidden;
+    border: none;
+    /*float: auto;
+    Se alinean de forma horizontal*/
+    padding: 5px;
+    /*Para que el texto no pise, para que se separe del borde*/
+    text-align: right;
+    /*Sirve para centrar el texto*/
+    color: #4682b4;
+}
+
+.parrafo {
+    font-family: "Bad Script", cursive;
+    color: #707070;
+    text-align: auto;
+}
+
+footer {
+    position: static;
+    padding: 1px;
+    bottom: 0;
+    margin-top: 90px;
+    width: 90%;
+    height: 100px;
+    text-align: center;
+    background-color: white;
+}
+
+#footer p {
+    width: 100%;
+}
