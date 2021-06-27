@@ -1,0 +1,187 @@
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 1.5
+}
+
+.sidebar {
+    width: 400px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    border: 1px solid grey;
+}
+
+div.content {
+    margin-left: 401px;
+    padding: 35px;
+    height: 1000px;
+}
+
+@media screen and (min-width: 700px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 699px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    img {
+        width: 75%;
+        height: auto;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.textblock {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    background-color: #FF6699;
+    /*#FEBDDC*/
+    color: white;
+    padding-left: 17px;
+    padding-right: 17px;
+    vertical-align: middle
+}
+
+.textblock:hover {
+    color: #000 !important
+}
+
+img {
+    left: 0px;
+    top: 0px;
+    z-index: -5;
+    opacity: 0.90;
+}
+
+.barra {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 8px;
+}
+
+.skills {
+    text-align: right;
+    padding: 5px;
+    color: white;
+    background-color: #FF6699;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.word,
+.excel {
+    width: 90%
+}
+
+.html,
+.css {
+    width: 60%
+}
+
+.java {
+    width: 50%
+}
+
+.base {
+    width: 20%
+}
+
+.js {
+    width: 20%
+}
+
+.php {
+    width: 10%
+}
+
+.ingles {
+    width: 90%
+}
+
+.italiano,
+.portugues,
+.ruso {
+    width: 25%
+}
+
+html {
+    overflow-x: hidden
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin: 10px 0
+}
+
+h1 {
+    font-size: 36px
+}
+
+h2 {
+    font-size: 30px
+}
+
+h3 {
+    font-size: 24px
+}
+
+h4 {
+    font-size: 20px
+}
+
+h5 {
+    font-size: 18px
+}
+
+h6 {
+    font-size: 16px
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+#aboutme {
+    text-align: center;
+    padding: 15px;
+}
+
+.abilities,
+.languages,
+.workexperience,
+.education,
+.hobbies {
+    padding: 15px;
+}

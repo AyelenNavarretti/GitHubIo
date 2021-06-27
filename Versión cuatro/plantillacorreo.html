@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column {
+            width: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .button {
+            background-color: #25d366;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+        }
+
+        .button:hover {
+            width: auto;
+            height: 60px;
+            border-radius: 50px;
+            text-align: left;
+            transition: 2s;
+            padding-left: 20px;
+            text-align: center;
+        }
+
+        .button:hover:after {
+            content: '  Clickea aquí para pedir presupuesto.';
+            height: 55px;
+            padding: 10px;
+            vertical-align: 35%;
+            color: #FFF;
+            font-size: 16px;
+        }
+
+        a {
+            color: #FFF;
+            font-size: 30px;
+        }
+
+        #columnh2 {
+            background: #4D4D4D;
+            color: #797979;
+            font-size: 18px;
+            font-weight: 100;
+            padding: 15px;
+        }
+
+
+        input[type="text"],
+        textarea {
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            outline: none;
+            display: block;
+            width: 100%;
+            padding: 7px;
+            border: none;
+            border-bottom: 1px solid #ddd;
+            background: transparent;
+            margin-bottom: 10px;
+            font: 16px Arial, Helvetica, sans-serif;
+            height: 45px;
+        }
+
+
+        input[type="submit"] {
+            background-color: #F73D71;
+            border: 0;
+            border-radius: 28px;
+            display: block;
+            font-size: 16px;
+            height: 56px;
+            margin: 0 auto;
+            max-width: 300px;
+            outline: none !important;
+            overflow: hidden;
+            position: relative;
+            transition: box-shadow 150ms;
+            width: 100%;
+            color: white;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <div class="row">
+            <div class="column">
+                <h2>Podés dejarnos tus datos</h2>
+                <h2 id="columnh2">PEDIDO DE PRESUPUESTO</h2>
+                <form method="post" action="plantillacorreo.php">
+                    <input type="text" placeholder="Nombre" name="nombre"><br>
+
+                    <input type="text" placeholder="E-mail" name="email"><br>
+
+                    <textarea placeholder="Mensaje" name="pedido"></textarea><br> <br>
+                    <input type="submit">
+                </form>
+                <br>
+                <br>
+
+                <h2>O bien, podés dejarnos un whatsapp</h2>
+
+                <button class="button"><a href="https://api.whatsapp.com/send?phone=5491138736434&text=Prueba%20WhatsApp"><i class="fa fa-whatsapp"></i></a></button>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

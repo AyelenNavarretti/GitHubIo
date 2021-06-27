@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .barra {
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 8px;
+            height: 15px;
+        }
+
+        #word2 {
+            text-align: right;
+            color: white;
+            background-color: #FF6699;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 8px;
+            height: 15px;
+            width: 90%;
+        }
+        
+        #word2:after {
+            content: "Word 90%";
+        }
+
+        button {
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            border: 1px solid #555555;
+            border-radius: 3px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>Word</h2>
+    
+    <div class="barra">
+        <div id="word2"></div><br> <br>
+    </div>
+    
+    <button onclick="myFunction()">Show</button>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("word2");
+            if (x.style.display === "none") 
+            {
+                x.style.display = "block";
+            }
+            else 
+            {
+                x.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
